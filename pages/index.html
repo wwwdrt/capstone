@@ -6,11 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>World Boxing Conference</title>
+    <link rel="stylesheet" href="/dist/output.css">
 </head>
 <body>
     <!-- MENU -->
-    <header id="navbar">
-        <ul id="top-bar">
+    <header id="navbar" class="flex flex-col">
+        <ul id="top-bar" class="hidden">
             <li>
                 <a href="">
                     <i></i>
@@ -37,47 +38,62 @@
                 </a>
             </li>
         </ul>
-        <nav id="desktop-menu">
+        <nav id="desktop-menu" class="hidden">
             <ul>
                 <li>
                     <a href="">
                         <img src="" alt="Logo"></a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="">About</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="">Program</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="">Join</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="">Sponsor</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="">News</a>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <a href="">CC Campaign</a>
                 </li>
             </ul>
         </nav>
-        <div id="mobile-menu">
-            <span class=""></span>
+
+        <!--  MOBILE MENU -->
+        <div
+                id="mobile-menu"
+                class="
+                block
+                absolute
+                top-[1rem]
+                right-[1rem]
+                cursor-pointer
+                w-[22px]
+                z-[100]
+">
+            <span id="bar" ></span>
         </div>
+
+        <div id="menu-overlay">
+            <ul id="overlay">
+                <li>
+                    <a href="" class="text-orange-500">About</a>
+                </li>
+                <li>
+                    <a href="">Program</a>
+                </li>
+                <li>
+                    <a href="">Join</a>
+                </li>
+            </ul>
+        </div>
+
     </header>
     <!-- HERO -->
     <!-- MAIN PROGRAM -->
