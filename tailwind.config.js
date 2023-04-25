@@ -9,7 +9,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        burger: "rgb(57, 72, 103)",
+        burger: "#545454",
+        topbar: "#3e3e3e",
+        navfont: "#ababab",
+        corange: "#ec5242"
       },
     },
   },
