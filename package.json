@@ -2,7 +2,7 @@
   "name": "capstone",
   "version": "1.0.0",
   "description": "<a name=\"readme-top\"></a>",
-  "main": "index.js",
+  "main": "/script.js",
   "scripts": {
     "build:css": "postcss ./styles/input.css -o ./styles/output.css --watch"
   },
