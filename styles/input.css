@@ -1,3 +1,19 @@
+/* stylelint-disable */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+   .bar {
+       @apply content-none block h-[3px] bg-burger mt-[3px] mb-0 transition duration-[0.4s] cursor-pointer
+   }
+
+    .menu {
+       @apply block absolute cursor-pointer w-[22px] z-[100] mt-3 ml-3
+    }
+
+    .menu-overlay {
+        @apply flex absolute w-full h-screen bg-slate-600 flex-col justify-start items-center top-0 z-[98] backdrop-blur-[6px] bg-opacity-60
+    }
+}

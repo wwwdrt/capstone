@@ -6,13 +6,91 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>World Boxing Conference</title>
+    <link rel="stylesheet" href="/styles/output.css">
 </head>
 <body>
     <!-- MENU -->
+    <header id="navbar" class="flex flex-col">
+        <ul id="top-bar"
+            class="hidden md:flex p-1.5 justify-end items-center bg-topbar text-white gap-3.5 cursor-pointer">
+            <li>
+                <a href="https://www.facebook.com/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    English
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    My Page
+                </a>
+            </li>
+            <li class="md:w-[20%] lg:w-[28%]">
+                <a href="#">
+                    Logout
+                </a>
+            </li>
+        </ul>
+        <nav id="desktop-menu" class="hidden md:flex items-center justify-center p-4 shadow-md">
+            <img src="/public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8"></a>
+            <ul class="flex gap-12 text-navfont drop-shadow-sm font-medium">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Program</a>
+                </li>
+                <li>
+                    <a href="#">Join</a>
+                </li>
+                <li>
+                    <a href="#">Sponsor</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="" class="border-4 border-corange p-2 text-corange font-medium">CC Campaign</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--  MOBILE MENU -->
+        <div id="mobile-menu" class="menu md:hidden" data-menu>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div id="menu-overlay" class="hidden md:hidden menu-overlay" data-overlay>
+            <ul id="overlay" class="flex flex-col gap-2 pl-3 pt-3 text-red-600 text-3xl">
+                <li>
+                    <a href="" class="menu-link">About</a>
+                </li>
+                <li>
+                    <a href="" class="menu-link">Program</a>
+                </li>
+                <li>
+                    <a href="" class="menu-link">Join</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <!-- HERO -->
     <!-- MAIN PROGRAM -->
     <!-- FEATURED SPEAKERS -->
     <!-- SPONSORS -->
     <!-- FOOTER -->
+    <script type="module" src="/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

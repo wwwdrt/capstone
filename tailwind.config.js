@@ -1,8 +1,20 @@
+/* eslint-disable */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/*html"],
+  mode: "jit",
+  content: [
+    "./pages/**/*.{html,js}",
+    "./components/**/*.{html,js}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        burger: "#545454",
+        topbar: "#3e3e3e",
+        navfont: "#ababab",
+        corange: "#ec5242"
+      },
+    },
   },
   plugins: [],
 };
