@@ -6,20 +6,20 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>World Boxing Conference</title>
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/styles/output.css">
 </head>
 <body>
     <!-- MENU -->
     <header id="navbar" class="flex flex-col">
-        <ul id="top-bar" class="hidden">
+        <ul id="top-bar" class="hidden md:flex">
             <li>
                 <a href="">
-                    <i></i>
+                    <ion-icon name="logo-facebook"></ion-icon>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i></i>
+                    <ion-icon name="logo-twitter"></ion-icon>
                 </a>
             </li>
             <li>
@@ -38,7 +38,7 @@
                 </a>
             </li>
         </ul>
-        <nav id="desktop-menu" class="hidden">
+        <nav id="desktop-menu" class="hidden md:flex">
             <ul>
                 <li>
                     <a href="">
@@ -66,39 +66,33 @@
         </nav>
 
         <!--  MOBILE MENU -->
-        <div
-                id="mobile-menu"
-                class="
-                block
-                absolute
-                top-[1rem]
-                right-[1rem]
-                cursor-pointer
-                w-[22px]
-                z-[100]
-">
-            <span id="bar" ></span>
+        <div id="mobile-menu" class="menu md:hidden" data-menu>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
 
-        <div id="menu-overlay">
-            <ul id="overlay">
+        <div id="menu-overlay" class="hidden md:hidden menu-overlay" data-overlay>
+            <ul id="overlay" class="flex flex-col gap-2 pl-3 pt-3 text-red-600 text-3xl">
                 <li>
-                    <a href="" class="text-orange-500">About</a>
+                    <a href="" class="menu-link">About</a>
                 </li>
                 <li>
-                    <a href="">Program</a>
+                    <a href="" class="menu-link">Program</a>
                 </li>
                 <li>
-                    <a href="">Join</a>
+                    <a href="" class="menu-link">Join</a>
                 </li>
             </ul>
         </div>
-
     </header>
     <!-- HERO -->
     <!-- MAIN PROGRAM -->
     <!-- FEATURED SPEAKERS -->
     <!-- SPONSORS -->
     <!-- FOOTER -->
+    <script type="module" src="/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
