@@ -3,7 +3,11 @@ module.exports = {
   mode: "jit",
   content: ["./pages/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        burger: "rgb(57, 72, 103)",
+      },
+    },
   },
   plugins: [],
 };
