@@ -24,4 +24,12 @@
     .program-card {
         @apply flex md:flex-col m-auto justify-center items-center gap-8 mt-[1.5rem] p-2 text-center w-[95%]
     }
+
+    .speaker {
+        @apply flex m-auto justify-center items-center w-[95%]
+    }
+
+    .speaker-hr {
+        @apply h-[1.5px] w-[12%] bg-navfont mt-[1rem] mb-[1rem] rounded md:w-[5%] lg:w-[3%] border-none
+    }
 }
