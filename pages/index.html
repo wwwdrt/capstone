@@ -12,15 +12,15 @@
     <!-- MENU -->
     <header id="navbar" class="flex flex-col">
         <ul id="top-bar"
-            class="hidden md:flex p-1.5 justify-end items-center bg-topbar text-white gap-3.5 cursor-pointer">
+            class="hidden md:flex p-1.5 justify-end items-center bg-topbar text-white gap-3.5 cursor-pointer fixed top-0 left-0 w-full">
             <li>
                 <a href="https://www.facebook.com/">
-                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-facebook" alt="Facebook Logo"></ion-icon>
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/">
-                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-twitter" alt="Facebook Logo"></ion-icon>
                 </a>
             </li>
             <li>
@@ -39,8 +39,11 @@
                 </a>
             </li>
         </ul>
-        <nav id="desktop-menu" class="hidden md:flex items-center justify-center p-4 shadow-md">
-            <img src="/public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8"></a>
+        <nav id="desktop-menu"
+             class="hidden md:flex items-center justify-center p-4 shadow-md fixed w-full z-[90] top-0 left-0 bg-white mt-[2.2rem]">
+            <a href="#">
+                <img src="/public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8"></a>
+            </a>
             <ul class="flex gap-12 text-navfont drop-shadow-sm font-medium">
                 <li>
                     <a href="#">About</a>
@@ -58,7 +61,7 @@
                     <a href="#">News</a>
                 </li>
                 <li>
-                    <a href="" class="border-4 border-corange p-2 text-corange font-medium">CC Campaign</a>
+                    <a href="" class="border-4 border-corange p-2 text-corange font-medium">Championship</a>
                 </li>
             </ul>
         </nav>
@@ -84,11 +87,43 @@
             </ul>
         </div>
     </header>
+
     <!-- HERO -->
+    <section id="hero" class="bg-hero-pattern md:bg-none">
+        <div id="hero-logo" class="md:hidden">
+            <img src="/public/logo.png" alt="Logo" class="m-auto">
+        </div>
+        <div id="hero-container" class="md:mt-[22%]">
+            <div id="hero-info" class="flex flex-col w-[80%] items-start m-auto">
+                <h1 id="greeting" class="text-2xl">"Attention warriors 👊"</h1>
+                <h2 id="title" class="text-5xl font-bold">WORLD BOXING <br> CONFERENCE <br> 2023</h2>
+                <div id="description" class="bg-herobox border-[6px] border-white p-[1rem] mt-[1.5rem] mb-[1.5rem]">
+                    <p>Welcome to the World Boxing Conference where
+                        champions are born and
+                        legacies
+                        are made. Join a global community of fighters and enthusiasts alike, and experience the electrifying rush of the sport that's captured hearts and minds around the world. Discover the power of the punch, the discipline of the training, and the camaraderie of the ring. Whether you're a seasoned pro or just starting out, the WBC is the ultimate destination for anyone looking to elevate their game and leave their mark on the world of boxing. Join us today and become part of the legacy.</p>
+                </div>
+                <h3 id="date" class="text-2xl font-bold text-date">2023.10.15(THU) ~ 16(FRI)</h3>
+                <p id="place" class="text-place mb-[6rem]">@ Sheikh Zayed Rd, Dubai World Trade Centre and more</p>
+            </div>
+            <video id="video-overlay"
+               class="absolute top-[50%] left-[50%] z-[-1] translate-y-[-50%] translate-x-[-50%] hidden md:flex opacity-[0.1] mt-[12%]"
+                   autoplay muted
+                   loop>
+                <source
+                        type="video/mp4"
+                        src="/public/hero-overlay.mp4"
+                />
+            </video>
+        </div>
+    </section>
+
     <!-- MAIN PROGRAM -->
     <!-- FEATURED SPEAKERS -->
     <!-- SPONSORS -->
     <!-- FOOTER -->
+
+    <!-- SCRIPTS -->
     <script type="module" src="/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

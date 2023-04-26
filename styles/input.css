@@ -10,7 +10,7 @@
    }
 
     .menu {
-       @apply block absolute cursor-pointer w-[22px] z-[100] mt-3 ml-3
+       @apply block fixed cursor-pointer w-[22px] z-[100] mt-3 ml-3 top-0 left-0
     }
 
     .menu-overlay {
