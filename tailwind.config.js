@@ -20,8 +20,9 @@ module.exports = {
 
       },
       backgroundImage: {
-        'hero-pattern': "url('../capstone/public/bg-hero.png')",
+        'hero-pattern': "url(../capstone/public/bg-hero.png)",
         'main-program': "url(../capstone/public/main-program/main-program-pattern.png)",
+        'chessboard': "url(../capstone/public/speakers/speaker-squares.png)",
       }
     },
   },
