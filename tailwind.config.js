@@ -16,10 +16,12 @@ module.exports = {
         herobox: "#f7f7f7",
         date: "#505050",
         place: "#787878",
+        mainprogram: "#272a32",
 
       },
       backgroundImage: {
         'hero-pattern': "url('../capstone/public/bg-hero.png')",
+        'main-program': "url(../capstone/public/main-program/main-program-pattern.png)",
       }
     },
   },
