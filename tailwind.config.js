@@ -12,8 +12,15 @@ module.exports = {
         burger: "#545454",
         topbar: "#3e3e3e",
         navfont: "#ababab",
-        corange: "#ec5242"
+        corange: "#ec5242",
+        herobox: "#f7f7f7",
+        date: "#505050",
+        place: "#787878",
+
       },
+      backgroundImage: {
+        'hero-pattern': "url('../capstone/public/bg-hero.png')",
+      }
     },
   },
   plugins: [],
