@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="../capstone/styles/output.css">
+</head>
+<body>
+<!-- MENU -->
+<header id="navbar" class="flex flex-col">
+    <ul id="top-bar"
+        class="hidden md:flex p-1.5 justify-end items-center bg-topbar text-white gap-3.5 cursor-pointer fixed top-0 left-0 w-full z-[99]">
+        <li>
+            <a href="https://www.facebook.com/">
+                <ion-icon name="logo-facebook" alt="Facebook Logo"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/">
+                <ion-icon name="logo-twitter" alt="Facebook Logo"></ion-icon>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                English
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                My Page
+            </a>
+        </li>
+        <li class="md:w-[20%] lg:w-[28%]">
+            <a href="#">
+                Logout
+            </a>
+        </li>
+    </ul>
+    <nav id="desktop-menu"
+         class="hidden md:flex items-center justify-center p-4 shadow-md fixed w-full top-0 left-0 bg-white mt-[2.2rem] z-[99]">
+        <a href="../capstone/pages/index.html">
+            <img src="../capstone/public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8 cursor-pointer">
+        </a>
+        <ul class="flex gap-12 text-navfont drop-shadow-sm font-medium">
+            <li>
+                <a href="../capstone/pages/index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Program</a>
+            </li>
+            <li>
+                <a href="#">Join</a>
+            </li>
+            <li>
+                <a href="#">Sponsor</a>
+            </li>
+            <li>
+                <a href="#">News</a>
+            </li>
+            <li>
+                <a href="" class="border-4 border-corange p-2 text-corange font-medium">Championship</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--  MOBILE MENU -->
+    <div id="mobile-menu" class="menu md:hidden z-[100]" data-menu>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div id="menu-overlay" class="hidden md:hidden menu-overlay z-[100]" data-overlay>
+        <ul id="overlay" class="flex flex-col gap-2 pl-3 pt-3 text-red-600 text-3xl">
+            <li>
+                <a href="/pages/about.html" class="menu-link">About</a>
+            </li>
+            <li>
+                <a href="" class="menu-link">Program</a>
+            </li>
+            <li>
+                <a href="" class="menu-link">Join</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="bg-[url('/public/bg-hero.png')] pt-[2.5rem]">
+    <a href="../capstone/pages/index.html" class="cursor-pointer">
+        <img src="../capstone/public/logo.png" alt="Logo" class="h-[104px] w-[193px] m-auto md:hidden">
+    </a>
+    <div id="about-container" class="md:mt-[22%]">
+        <div id="about-info" class="flex flex-col w-[80%] items-center m-auto text-center">
+            <h1 class="text-2xl text-corange">"Attention warriors 👊"</h1>
+            <h2 class="text-5xl font-bold bg-gradient-to-l from-corange to-orange-400 text-transparent bg-clip-text drop-shadow-2xl">WORLD BOXING <br> CONFERENCE 2023</h2>
+            <div class="bg-herobox border-[6px] border-white p-[1rem] mt-[1.5rem] mb-[1.5rem]">
+                <p>Our conference brings together the most influential figures in the boxing industry, from world-renowned athletes to top-notch coaches, trainers, and experts. Discover the latest trends and innovations in the sport, learn winning strategies and mental toughness from champions, and be part of shaping the future of boxing.</p>
+            </div>
+            <img src="../capstone/public/mike-training.gif" alt="Mike Tyson Training"
+                 class="hidden md:flex m-auto md:mb-[5%]">
+            <h3 class="text-date">Please contact us per Email for any further
+                questions about WBC 2023</h3>
+            <p class="text-mainprogram mb-[6rem] underline font-medium cursor-pointer">warriors@wbc
+                .org</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONFERENCE LOGO -->
+<section id="conference">
+    <div id="conference-container" class="flex flex-col justify-center items-center text-center">
+        <h2 class="pt-[3rem] text-2xl font-medium text-mainprogram">World Boxing Conference <br> Global 2023 Logo</h2>
+        <hr class="hr">
+        <p class="mb-[3rem]">The logo of WBC World Boxing Conference was decided through the logo competition from 8.
+            June
+            to 7.
+            July</p>
+        <div id="history-ad"
+             class="border-2 border-navfont bg-white w-[90%] m-auto flex justify-center p-4 cursor-pointer">
+            <img src="../capstone/public/logo.png" alt="Logo" class="h-[104px] w-[193px] m-auto">
+        </div>
+    </div>
+    <hr class="mt-[4rem] h-[1.5px] w-full bg-navfont mt-[1.5rem] mb-[2rem] rounded lg:w-[3%] border-none">
+</section>
+
+<!--  PREVIOUS CONFERENCES -->
+<section id="history" class="mb-[3rem] md:mb-[4rem]">
+    <div id="history-info" class="flex flex-col justify-center items-center text-center">
+        <h2 class="pt-[0.5rem] text-2xl font-medium text-mainprogram">See the past WBC Global Conferences</h2>
+        <hr class="hr">
+        <p class="mb-[3rem]">The logo of WBC World Boxing Conference was decided through the logo competition from
+            8. June to 7. July.
+    </div>
+    <div id="history-memories"
+         class="flex flex-col gap-8 md:flex-row items-center justify-center m-auto w-[90%]">
+        <div id="first-memory" class="relative text-center w-[85%] m-auto cursor-pointer">
+            <img src="../capstone/public/history/memory-2022.jpg" alt="First memory 2022">
+            <span class="absolute bg-corange w-full h-full top-0 left-0 opacity-40 hover:opacity-0"></span>
+            <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white">
+                <h2 class="text-5xl font-medium">2022</h2>
+                <p class="font-medium">WBC Conference 2022 in Israel</p>
+            </div>
+        </div>
+        <div id="second-memory" class="relative text-center w-[85%] m-auto cursor-pointer">
+            <img src="../capstone/public/history/memory-2018.jpg" alt="First memory 2018">
+            <span class="absolute bg-corange w-full h-full top-0 left-0 opacity-40 hover:opacity-0"></span>
+            <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white">
+                <h2 class="text-5xl font-medium">2018</h2>
+                <p class="font-medium">WBC Conference 2018 in Israel</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPONSORS -->
+<section id="sponsors" class="md:hidden">
+    <div id="sponsors-container"
+         class="flex flex-col justify-center items-center text-center bg-sponsors">
+        <h2 class="pt-[3rem] text-2xl font-medium text-sponsors-font">Sponsors</h2>
+        <hr class="hr">
+        <div id="sponsors-list" class="flex flex-wrap m-auto w-[90%] gap-4">
+            <img src="../capstone/public/sponsors/sponsors-jose.png" alt="Jose Sulaiman Foundation" class="grayscale hover:grayscale-0">
+            <img src="../capstone/public/sponsors/sponsors-everlast.png" alt="Everlast">
+            <img src="../capstone/public/sponsors/sponsors-tecate.png" alt="Tecate" class="grayscale hover:grayscale-0">
+            <img src="../capstone/public/sponsors/sponsors-hublot.png" alt="Hublot">
+            <img src="../capstone/public/sponsors/sponsors-pemex.png" alt="Pemex" class="grayscale hover:grayscale-0">
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<section id="footer"
+         class="md:bg-footer flex justify-center items-center text-start m-auto gap-4 md:text-white text-mainprogram">
+    <figure>
+        <img src="../capstone/public/logo.png" alt="Logo" class="p-8">
+    </figure>
+    <div id="footer-info" class="flex flex-col gap-4 w-[80%] p-8">
+        <h2>2015 World Boxing Conference. All Rights Reserved.</h2>
+        <p>Thank you for joining us at the 2015 World Boxing Conference. We hope that you enjoyed the event and found it informative and engaging. </p>
+    </div>
+</section>
+
+<!-- SCRIPTS -->
+<script type="module" src="../capstone/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
