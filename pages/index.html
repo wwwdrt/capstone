@@ -12,7 +12,7 @@
     <!-- MENU -->
     <header id="navbar" class="flex flex-col">
         <ul id="top-bar"
-            class="hidden md:flex p-1.5 justify-end items-center bg-topbar text-white gap-3.5 cursor-pointer fixed top-0 left-0 w-full">
+            class="hidden md:flex p-1.5 justify-end items-center bg-topbar text-white gap-3.5 cursor-pointer fixed top-0 left-0 w-full z-[99]">
             <li>
                 <a href="https://www.facebook.com/">
                     <ion-icon name="logo-facebook" alt="Facebook Logo"></ion-icon>
@@ -40,13 +40,13 @@
             </li>
         </ul>
         <nav id="desktop-menu"
-             class="hidden md:flex items-center justify-center p-4 shadow-md fixed w-full z-[90] top-0 left-0 bg-white mt-[2.2rem]">
-            <a href="#">
-                <img src="/public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8"></a>
+             class="hidden md:flex items-center justify-center p-4 shadow-md fixed w-full top-0 left-0 bg-white mt-[2.2rem] z-[99]">
+            <a href="/pages/about.html">
+                <img src="/public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8 cursor-pointer">
             </a>
             <ul class="flex gap-12 text-navfont drop-shadow-sm font-medium">
                 <li>
-                    <a href="#">About</a>
+                    <a href="/pages/about.html">About</a>
                 </li>
                 <li>
                     <a href="#">Program</a>
@@ -67,16 +67,16 @@
         </nav>
 
         <!--  MOBILE MENU -->
-        <div id="mobile-menu" class="menu md:hidden" data-menu>
+        <div id="mobile-menu" class="menu md:hidden z-[100]" data-menu>
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
 
-        <div id="menu-overlay" class="hidden md:hidden menu-overlay" data-overlay>
+        <div id="menu-overlay" class="hidden md:hidden menu-overlay z-[100]" data-overlay>
             <ul id="overlay" class="flex flex-col gap-2 pl-3 pt-3 text-red-600 text-3xl">
                 <li>
-                    <a href="" class="menu-link">About</a>
+                    <a href="/pages/about.html" class="menu-link">About</a>
                 </li>
                 <li>
                     <a href="" class="menu-link">Program</a>
@@ -90,13 +90,17 @@
 
     <!-- HERO -->
     <section id="hero" class="bg-hero-pattern md:bg-none">
-        <div id="hero-logo" class="md:hidden">
+        <a id="hero-logo" class="md:hidden cursor-pointer" href="/pages/about.html">
             <img src="/public/logo.png" alt="Logo" class="m-auto">
-        </div>
+        </a>
         <div id="hero-container" class="md:mt-[22%]">
             <div id="hero-info" class="flex flex-col w-[80%] items-start m-auto">
-                <h1 id="greeting" class="text-2xl">"Attention warriors 👊"</h1>
-                <h2 id="title" class="text-5xl font-bold">WORLD BOXING <br> CONFERENCE <br> 2023</h2>
+                <h1 id="greeting" class="text-2xl text-corange">"Attention warriors 👊"</h1>
+                <h2 id="title"
+                    class="text-5xl font-bold bg-gradient-to-l from-corange to-orange-400 text-transparent bg-clip-text drop-shadow-2xl">WORLD
+                    BOXING <br> CONFERENCE
+                    <br>
+                    2023</h2>
                 <div id="description" class="bg-herobox border-[6px] border-white p-[1rem] mt-[1.5rem] mb-[1.5rem]">
                     <p>Welcome to the World Boxing Conference where
                         champions are born and
@@ -107,7 +111,7 @@
                 <p id="place" class="text-place mb-[6rem]">@ Sheikh Zayed Rd, Dubai World Trade Centre and more</p>
             </div>
             <video id="video-overlay"
-               class="absolute top-[50%] left-[50%] z-[-1] translate-y-[-50%] translate-x-[-50%] hidden md:flex opacity-[0.1] mt-[12%]"
+               class="absolute top-[50%] left-[50%] z-[-1] translate-y-[-50%] translate-x-[-50%] hidden md:flex opacity-[0.3] mt-[12%]"
                    autoplay muted
                    loop>
                 <source
@@ -124,7 +128,7 @@
              class="flex justify-center items-center flex-col pt-[3rem] bg-main-program bg-mainprogram">
             <h2 class="text-2xl font-medium text-white">Main Program</h2>
             <hr class="hr">
-            <div id="program-cards-container" class="flex flex-col md:flex-row">
+            <div id="program-cards-container" class="flex flex-col md:flex-row md:gap-2 md:w-[90%] w-[95%]">
                 <div class="program-card">
                     <img src="/public/main-program/main-program-1.png" alt="">
                     <h3 class="font-medium text-corange">Champion's Mindset</h3>
@@ -159,7 +163,7 @@
                 <div class="program-card">
                     <img src="/public/main-program/main-program-5.png" alt="">
                     <h3 class="font-medium text-corange">Ignite the Fight</h3>
-                    <p class="text-sm text-white pb-[3rem]">Fuel your fighting spirit with our ignite session, featuring
+                    <p class="text-sm text-white">Fuel your fighting spirit with our ignite session, featuring
                         inspiring stories of resilience
                         and determination from boxers who overcame adversity, and achieved greatness, led by athletes and coaches.</p>
                 </div>
@@ -175,7 +179,7 @@
         <div id="speakers-container" class="flex flex-col justify-center m-auto items-center pt-[3rem]">
             <h2 class="text-2xl font-medium text-mainprogram">Featured Speakers</h2>
             <hr class="hr">
-            <div id="speakers-cards-container" class="md:grid md:grid-cols-2 w-[95%]">
+            <div id="speakers-cards-container" class="flex flex-col gap-[2rem] md:grid md:grid-cols-2 w-[95%]">
                 <div class="speaker">
                     <figure class="bg-chessboard bg-no-repeat p-[2rem]">
                         <img src="/public/speakers/speaker-sugar-ray.jpg" alt="Sugar Ray" class="bg-auto max-w-none">
@@ -263,10 +267,27 @@
                 <button type="submit"
                         class="flex justify-center p-5 md:hidden m-auto w-full bg-white mb-[2rem] mt-[2rem] border-2 border-navfont rounded items-center gap-2 font-medium text-mainprogram cursor-pointer">MORE <ion-icon name="chevron-down-outline" class="text-corange font-bold text-lg"></ion-icon>
                 </button>
+         </div>
         </div>
     </section>
 
     <!-- SPONSORS -->
+    <section id="sponsors" class="hidden md:flex">
+        <div id="sponsors-container"
+             class="flex flex-col justify-center items-center text-center bg-sponsors">
+            <h2 class="pt-[3rem] text-2xl font-medium text-sponsors-font">Sponsors</h2>
+            <hr class="hr">
+            <div id="sponsors-list"
+                 class="flex flex-wrap m-auto w-[90%] gap-4 items-center justify-center md:flex-row md:flex-nowrap max-w-[18%] pb-[3rem]">
+                <img src="/public/sponsors/sponsors-jose.png" alt="Jose Sulaiman Foundation" class="grayscale hover:grayscale-0">
+                <img src="/public/sponsors/sponsors-everlast.png" alt="Everlast">
+                <img src="/public/sponsors/sponsors-tecate.png" alt="Tecate" class="grayscale hover:grayscale-0">
+                <img src="/public/sponsors/sponsors-hublot.png" alt="Hublot">
+                <img src="/public/sponsors/sponsors-pemex.png" alt="Pemex" class="grayscale hover:grayscale-0">
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
 
     <!-- SCRIPTS -->
