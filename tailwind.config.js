@@ -17,12 +17,20 @@ module.exports = {
         date: "#505050",
         place: "#787878",
         mainprogram: "#272a32",
+        sponsors: "#414246",
+        'sponsors-font': "#e8e8e7",
+        footer: "#2e2e2e",
+        programbg: "rgba(60, 63, 70, 0.6)",
+        gorange: "#f65d1a",
 
       },
       backgroundImage: {
         'hero-pattern': "url(../capstone/public/bg-hero.png)",
         'main-program': "url(../capstone/public/main-program/main-program-pattern.png)",
         'chessboard': "url(../capstone/public/speakers/speaker-squares.png)",
+      },
+      screens: {
+        'xs': '300px',
       }
     },
   },
