@@ -2121,12 +2121,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/public\/bg-hero\.png\'\)\] {
-  background-image: url('/public/bg-hero.png');
+.bg-\[url\(\'\.\.\/public\/bg-hero\.png\'\)\] {
+  background-image: url('../public/bg-hero.png');
 }
 
 .bg-chessboard {
-  background-image: url(./public/speakers/speaker-squares.png);
+  background-image: url(/public/speakers/speaker-squares.png);
 }
 
 .bg-gradient-to-l {
@@ -2134,15 +2134,11 @@ video {
 }
 
 .bg-hero-pattern {
-  background-image: url(./public/bg-hero.png);
+  background-image: url(/public/bg-hero.png);
 }
 
 .bg-main-program {
-  background-image: url(./public/main-program/main-program-pattern.png);
-}
-
-.bg-\[url\(\'\.\.\/public\/bg-hero\.png\'\)\] {
-  background-image: url('../public/bg-hero.png');
+  background-image: url(/public/main-program/main-program-pattern.png);
 }
 
 .from-corange {
