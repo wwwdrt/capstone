@@ -67,22 +67,26 @@
         </nav>
 
         <!--  MOBILE MENU -->
-        <div id="mobile-menu" class="menu md:hidden z-[100]" data-menu>
+        <div id="mobile-menu" class="menu md:hidden fixed" data-menu>
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
 
-        <div id="menu-overlay" class="hidden md:hidden menu-overlay z-[100]" data-overlay>
-            <ul id="overlay" class="flex flex-col gap-2 pl-3 pt-3 text-red-600 text-3xl">
+        <div id="menu-overlay" class="hidden md:hidden menu-overlay fixed" data-overlay>
+            <ul id="overlay"
+                class="flex flex-col gap-[3.5rem] pl-3 pt-3 text-corange text-5xl m-auto drop-shadow-2xl text-center">
                 <li>
-                    <a href="/pages/about.html" class="menu-link">About</a>
+                    <a href="#hero" class="menu-link hover:btnEff-1">Home</a>
                 </li>
                 <li>
-                    <a href="" class="menu-link">Program</a>
+                    <a href="/pages/about.html" class="menu-link hover:btnEff-1">About</a>
                 </li>
                 <li>
-                    <a href="" class="menu-link">Join</a>
+                    <a href="#main-program" class="menu-link hover:btnEff-1">Program</a>
+                </li>
+                <li>
+                    <a href="#speakers" class="menu-link hover:btnEff-1">Join</a>
                 </li>
             </ul>
         </div>
@@ -176,99 +180,6 @@
 
     <!-- FEATURED SPEAKERS -->
     <section id="speakers">
-        <div id="speakers-container" class="flex flex-col justify-center m-auto items-center pt-[3rem]">
-            <h2 class="text-2xl font-medium text-mainprogram">Featured Speakers</h2>
-            <hr class="hr">
-            <div id="speakers-cards-container" class="flex flex-col gap-[2rem] md:grid md:grid-cols-2 w-[95%]">
-                <div class="speaker">
-                    <figure class="bg-chessboard bg-no-repeat p-[2rem]">
-                        <img src="/public/speakers/speaker-sugar-ray.jpg" alt="Sugar Ray" class="bg-auto max-w-none">
-                    </figure>
-                    <div class="speaker-info">
-                        <h3 class="text-lg font-medium text-mainprogram">Sugar Ray</h3>
-                        <p class="text-corange italic">Retired Professional Boxer and Boxing Analyst</p>
-                        <hr class="speaker-hr">
-                        <p class="text-xs">Sugar Ray Leonard is a retired professional boxer and Olympic gold
-                            medalist. He
-                            is
-                            considered one of the greatest boxers of all time and was inducted into the International Boxing Hall of Fame in 1997. He is now a boxing analyst for various sports networks. Leonard attended Palmer Park High School and the University of Maryland.</p>
-                    </div>
-                </div>
-                <div class="speaker">
-                    <figure class="bg-chessboard bg-no-repeat p-[2rem]">
-                        <img src="/public/speakers/speaker-sugar-ray.jpg" alt="Sugar Ray" class="bg-auto max-w-none">
-                    </figure>
-                    <div class="speaker-info">
-                        <h3 class="text-lg font-medium text-mainprogram">Sugar Ray</h3>
-                        <p class="text-corange italic">Retired Professional Boxer and Boxing Analyst</p>
-                        <hr class="speaker-hr">
-                        <p class="text-xs">Sugar Ray Leonard is a retired professional boxer and Olympic gold
-                            medalist. He
-                            is
-                            considered one of the greatest boxers of all time and was inducted into the International Boxing Hall of Fame in 1997. He is now a boxing analyst for various sports networks. Leonard attended Palmer Park High School and the University of Maryland.</p>
-                    </div>
-                </div>
-                <div class="speaker hidden md:flex">
-                    <figure class="bg-chessboard bg-no-repeat p-[2rem]">
-                        <img src="/public/speakers/speaker-sugar-ray.jpg" alt="Sugar Ray" class="bg-auto max-w-none">
-                    </figure>
-                    <div class="speaker-info">
-                        <h3 class="text-lg font-medium text-mainprogram">Sugar Ray</h3>
-                        <p class="text-corange italic">Retired Professional Boxer and Boxing Analyst</p>
-                        <hr class="speaker-hr">
-                        <p class="text-xs">Sugar Ray Leonard is a retired professional boxer and Olympic gold
-                            medalist. He
-                            is
-                            considered one of the greatest boxers of all time and was inducted into the International Boxing Hall of Fame in 1997. He is now a boxing analyst for various sports networks. Leonard attended Palmer Park High School and the University of Maryland.</p>
-                    </div>
-                </div>
-                <div class="speaker hidden md:flex">
-                    <figure class="bg-chessboard bg-no-repeat p-[2rem]">
-                        <img src="/public/speakers/speaker-sugar-ray.jpg" alt="Sugar Ray" class="bg-auto max-w-none">
-                    </figure>
-                    <div class="speaker-info">
-                        <h3 class="text-lg font-medium text-mainprogram">Sugar Ray</h3>
-                        <p class="text-corange italic">Retired Professional Boxer and Boxing Analyst</p>
-                        <hr class="speaker-hr">
-                        <p class="text-xs">Sugar Ray Leonard is a retired professional boxer and Olympic gold
-                            medalist. He
-                            is
-                            considered one of the greatest boxers of all time and was inducted into the International Boxing Hall of Fame in 1997. He is now a boxing analyst for various sports networks. Leonard attended Palmer Park High School and the University of Maryland.</p>
-                    </div>
-                </div>
-                <div class="speaker hidden md:flex">
-                    <figure class="bg-chessboard bg-no-repeat p-[2rem]">
-                        <img src="/public/speakers/speaker-sugar-ray.jpg" alt="Sugar Ray" class="bg-auto max-w-none">
-                    </figure>
-                    <div class="speaker-info">
-                        <h3 class="text-lg font-medium text-mainprogram">Sugar Ray</h3>
-                        <p class="text-corange italic">Retired Professional Boxer and Boxing Analyst</p>
-                        <hr class="speaker-hr">
-                        <p class="text-xs">Sugar Ray Leonard is a retired professional boxer and Olympic gold
-                            medalist. He
-                            is
-                            considered one of the greatest boxers of all time and was inducted into the International Boxing Hall of Fame in 1997. He is now a boxing analyst for various sports networks. Leonard attended Palmer Park High School and the University of Maryland.</p>
-                    </div>
-                </div>
-                <div class="speaker hidden md:flex">
-                    <figure class="bg-chessboard bg-no-repeat p-[2rem]">
-                        <img src="/public/speakers/speaker-sugar-ray.jpg" alt="Sugar Ray" class="bg-auto max-w-none">
-                    </figure>
-                    <div class="speaker-info">
-                        <h3 class="text-lg font-medium text-mainprogram">Sugar Ray</h3>
-                        <p class="text-corange italic">Retired Professional Boxer and Boxing Analyst</p>
-                        <hr class="speaker-hr">
-                        <p class="text-xs">Sugar Ray Leonard is a retired professional boxer and Olympic gold
-                            medalist. He
-                            is
-                            considered one of the greatest boxers of all time and was inducted into the International Boxing Hall of Fame in 1997. He is now a boxing analyst for various sports networks. Leonard attended Palmer Park High School and the University of Maryland.</p>
-                    </div>
-                </div>
-                <button type="submit"
-                        class="flex justify-center p-5 md:hidden m-auto w-full bg-white mb-[2rem] mt-[2rem] border-2 border-navfont rounded items-center gap-2 font-medium text-mainprogram cursor-pointer">MORE <ion-icon name="chevron-down-outline" class="text-corange font-bold text-lg"></ion-icon>
-                </button>
-         </div>
-        </div>
     </section>
 
     <!-- SPONSORS -->
@@ -290,7 +201,7 @@
 
     <!-- FOOTER -->
     <section id="footer"
-             class="hidden md:bg-footer md:flex justify-center items-center text-start m-auto gap-4 md:text-white text-mainprogram">
+             class="hidden md:bg-white md:flex justify-center items-center text-start m-auto gap-4 text-mainprogram">
         <figure>
             <img src="/public/logo.png" alt="Logo" class="p-8">
         </figure>
