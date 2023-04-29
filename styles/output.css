@@ -616,14 +616,6 @@ video {
   }
 }
 
-.btnEff-1 {
-  border-radius: 0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-  padding: 0.8rem;
-  opacity: 0.8;
-}
-
 .fixed {
   position: fixed;
 }
@@ -1031,11 +1023,6 @@ video {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1091,11 +1078,6 @@ video {
 .text-place {
   --tw-text-opacity: 1;
   color: rgb(120 120 120 / var(--tw-text-opacity));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-sponsors-font {
