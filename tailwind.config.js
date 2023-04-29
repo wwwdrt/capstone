@@ -21,10 +21,10 @@ module.exports = {
         gorange: "#f65d1a",
       },
       backgroundImage: {
-        "hero-pattern": "url(../capstone/public/bg-hero.png)",
+        "hero-pattern": "url(./public/bg-hero.png)",
         "main-program":
-          "url(../capstone/public/main-program/main-program-pattern.png)",
-        chessboard: "url(../capstone/public/speakers/speaker-squares.png)",
+          "url(./public/main-program/main-program-pattern.png)",
+        chessboard: "url(./public/speakers/speaker-squares.png)",
       },
       screens: {
         xs: "300px",

@@ -2126,7 +2126,7 @@ video {
 }
 
 .bg-chessboard {
-  background-image: url(../capstone/public/speakers/speaker-squares.png);
+  background-image: url(./public/speakers/speaker-squares.png);
 }
 
 .bg-gradient-to-l {
@@ -2134,11 +2134,15 @@ video {
 }
 
 .bg-hero-pattern {
-  background-image: url(../capstone/public/bg-hero.png);
+  background-image: url(./public/bg-hero.png);
 }
 
 .bg-main-program {
-  background-image: url(../capstone/public/main-program/main-program-pattern.png);
+  background-image: url(./public/main-program/main-program-pattern.png);
+}
+
+.bg-\[url\(\'\.\.\/public\/bg-hero\.png\'\)\] {
+  background-image: url('../public/bg-hero.png');
 }
 
 .from-corange {
