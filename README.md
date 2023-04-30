@@ -4,7 +4,7 @@
   <img src="/public/drtcode.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>WBC</b></h3>
 
 </div>
 
@@ -89,8 +89,9 @@ information upon clicking, and toggles the button text between "More" and "Less"
 
 > You can explore a live demonstration of my project and watch a video walkthrough that covers each section of it 👇
 
+Video 👉 https://www.loom.com/share/7ce595b2e9a54a6f83ae296993d83aa3
+
 - [Live Demo Link](https://wwwdrt.github.io/capstone/)
-- [Video](https://whatever.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
