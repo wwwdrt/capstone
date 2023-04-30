@@ -10,11 +10,23 @@
    }
 
     .menu {
-       @apply block fixed cursor-pointer w-[22px] z-[100] mt-3 ml-3 top-0 left-0
+       @apply block cursor-pointer w-[22px] z-[100] mt-3 ml-3 top-0 left-0
+    }
+
+    #mobile-menu.is-active span:nth-of-type(1) {
+        @apply bg-corange rotate-[-45deg] translate-y-[6px]
+    }
+
+    #mobile-menu.is-active span:nth-of-type(2) {
+        @apply hidden
+    }
+
+    #mobile-menu.is-active span:nth-of-type(3) {
+        @apply bg-corange rotate-45
     }
 
     .menu-overlay {
-        @apply flex absolute w-full h-screen bg-slate-600 flex-col justify-start items-center top-0 z-[98] backdrop-blur-[6px] bg-opacity-60
+        @apply flex w-full h-screen bg-slate-600 flex-col justify-start items-center top-0 z-[99] backdrop-blur-[6px] bg-opacity-80
     }
 
     .hr {
@@ -31,5 +43,9 @@
 
     .speaker-hr {
         @apply h-[1.5px] w-[12%] bg-navfont mt-[1rem] mb-[1rem] rounded md:w-[5%] lg:w-[3%] border-none
+    }
+
+    .btnEff-1 {
+        @apply p-[0.8rem] bg-slate-400 rounded opacity-80
     }
 }

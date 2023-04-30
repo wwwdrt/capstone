@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Boxing Conference</title>
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body>
+    <!-- MENU -->
+    <header id="navbar" class="flex flex-col">
+        <ul id="top-bar"
+            class="hidden md:flex p-1.5 justify-end items-center bg-topbar text-white gap-3.5 cursor-pointer fixed top-0 left-0 w-full z-[99]">
+            <li>
+                <a href="https://www.facebook.com/">
+                    <ion-icon name="logo-facebook" alt="Facebook Logo"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/">
+                    <ion-icon name="logo-twitter" alt="Facebook Logo"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    English
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    My Page
+                </a>
+            </li>
+            <li class="md:w-[20%] lg:w-[28%]">
+                <a href="#">
+                    Logout
+                </a>
+            </li>
+        </ul>
+        <nav id="desktop-menu"
+             class="hidden md:flex items-center justify-evenly p-4 shadow-md fixed w-full top-0 left-0 bg-white mt-[2.2rem] z-[99]">
+            <a href="./pages/about.html">
+                <img src="./public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8 cursor-pointer">
+            </a>
+            <ul class="flex gap-12 text-navfont drop-shadow-sm font-medium">
+                <li>
+                    <a href="./pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="#main-program">Program</a>
+                </li>
+                <li>
+                    <a href="#speakers">Join</a>
+                </li>
+                <li>
+                    <a href="#sponsors">Sponsor</a>
+                </li>
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="./pages/about.html#history" class="border-4 border-corange p-2 text-corange font-medium">
+                        Championship</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--  MOBILE MENU -->
+        <div id="mobile-menu" class="menu md:hidden fixed" data-menu>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div id="menu-overlay" class="hidden md:hidden menu-overlay fixed" data-overlay>
+            <ul id="overlay"
+                class="flex flex-col gap-[3.5rem] pl-3 pt-3 text-corange text-5xl m-auto drop-shadow-2xl text-center">
+                <li>
+                    <a href="#hero" class="menu-link hover:btnEff-1">Home</a>
+                </li>
+                <li>
+                    <a href="./pages/about.html" class="menu-link hover:btnEff-1">About</a>
+                </li>
+                <li>
+                    <a href="#main-program" class="menu-link hover:btnEff-1">Program</a>
+                </li>
+                <li>
+                    <a href="#speakers" class="menu-link hover:btnEff-1">Join</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="bg-hero-pattern md:bg-none">
+        <div id="hero-container" class="pt-[4rem] md:mt-[18%]">
+            <div id="hero-info" class="flex flex-col w-[80%] items-start m-auto">
+                <h1 id="greeting" class="text-2xl text-corange">"Attention warriors 👊"</h1>
+                <h2 id="title"
+                    class="text-5xl font-bold bg-gradient-to-l from-corange to-orange-400 text-transparent bg-clip-text drop-shadow-2xl">WORLD
+                    BOXING <br> CONFERENCE
+                    <br>
+                    2023</h2>
+                <div id="description" class="bg-herobox border-[6px] border-white p-[1rem] mt-[1.5rem] mb-[1.5rem]">
+                    <p>Welcome to the World Boxing Conference where
+                        champions are born and
+                        legacies
+                        are made. Join a global community of fighters and enthusiasts alike, and experience the electrifying rush of the sport that's captured hearts and minds around the world. Discover the power of the punch, the discipline of the training, and the camaraderie of the ring. Whether you're a seasoned pro or just starting out, the WBC is the ultimate destination for anyone looking to elevate their game and leave their mark on the world of boxing. Join us today and become part of the legacy.</p>
+                </div>
+                <h3 id="date" class="text-2xl font-bold text-date">2023.10.15(THU) ~ 16(FRI)</h3>
+                <p id="place" class="text-place mb-[6rem]">@ Sheikh Zayed Rd, Dubai World Trade Centre and more</p>
+            </div>
+            <video id="video-overlay"
+               class="absolute top-[50%] left-[50%] z-[-1] translate-y-[-50%] translate-x-[-50%] hidden md:flex opacity-[0.3] mt-[12%]"
+                   autoplay muted
+                   loop>
+                <source
+                        type="video/mp4"
+                        src="./public/hero-overlay.mp4"
+                />
+            </video>
+        </div>
+    </section>
+
+    <!-- MAIN PROGRAM -->
+    <section id="main-program">
+        <div id="program-container"
+             class="flex justify-center items-center flex-col pt-[3rem] bg-main-program bg-mainprogram">
+            <h2 class="text-2xl font-medium text-white">Main Program</h2>
+            <hr class="hr">
+            <div id="program-cards-container" class="flex flex-col md:flex-row md:gap-2 md:w-[90%] w-[95%]">
+                <div class="program-card">
+                    <img src="./public/main-program/main-program-1.png" alt="Program Card">
+                    <h3 class="font-medium text-corange">Champion's Mindset</h3>
+                    <p class="text-sm text-white">Unleash the winning strategies and mental toughness of top boxing
+                        champions in
+                        our powerful
+                        lecture, and conquer your battles.</p>
+                </div>
+                <div class="program-card">
+                    <img src="./public/main-program/main-program-2.png" alt="Program Card">
+                    <h3 class="font-medium text-corange">Boxing Revolution</h3>
+                    <p class="text-sm text-white">Experience the future of boxing through cutting-edge technology,
+                        equipment,
+                        and
+                        training
+                        techniques at our exhibition.</p>
+                </div>
+                <div class="program-card">
+                    <img src="./public/main-program/main-program-3.png" alt="Program Card">
+                    <h3 class="font-medium text-corange">Ringside Forum</h3>
+                    <p class="text-sm text-white">Shape the future of boxing by joining industry's top experts and
+                        influencers in our
+                        interactive forum, discussing current state challenges, and opportunities of the sport.</p>
+                </div>
+                <div class="program-card">
+                    <img src="./public/main-program/main-program-4.png" alt="Program Card">
+                    <h3 class="font-medium text-corange">Power Punch Workshop</h3>
+                    <p class="text-sm text-white">Elevate your boxing skills to the next level in our hands-on
+                        workshop, led by world-class
+                        trainers who will teach you the proper technique for a knockout punch, footwork, speed, and agility.</p>
+                </div>
+                <div class="program-card">
+                    <img src="./public/main-program/main-program-5.png" alt="Program Card">
+                    <h3 class="font-medium text-corange">Ignite the Fight</h3>
+                    <p class="text-sm text-white">Fuel your fighting spirit with our ignite session, featuring
+                        inspiring stories of resilience
+                        and determination from boxers who overcame adversity, and achieved greatness, led by athletes and coaches.</p>
+                </div>
+            </div>
+            <button type="submit" class="p-4 mb-[3rem] mt-[2rem] bg-corange font-medium text-2xl w-[13rem] text-white cursor-pointer md:hidden">JOIN
+                NOW</button>
+            <p class="mb-[4rem] mt-[1rem] text-white underline cursor-pointer hidden md:flex">SEE THE WHOLE PROGRAM</p>
+        </div>
+    </section>
+
+    <!-- FEATURED SPEAKERS -->
+    <section id="speakers">
+    </section>
+
+    <!-- SPONSORS -->
+    <section id="sponsors" class="hidden md:flex">
+        <div id="sponsors-container"
+             class="flex flex-col justify-center items-center text-center bg-sponsors">
+            <h2 class="pt-[3rem] text-2xl font-medium text-sponsors-font">Sponsors</h2>
+            <hr class="hr">
+            <div id="sponsors-list"
+                 class="flex flex-wrap m-auto w-[90%] gap-4 items-center justify-center md:flex-row md:flex-nowrap max-w-[18%] pb-[3rem]">
+                <img src="./public/sponsors/sponsors-jose.png" alt="Jose Sulaiman Foundation"
+                     class="grayscale hover:grayscale-0">
+                <img src="./public/sponsors/sponsors-everlast.png" alt="Everlast">
+                <img src="./public/sponsors/sponsors-tecate.png" alt="Tecate" class="grayscale hover:grayscale-0">
+                <img src="./public/sponsors/sponsors-hublot.png" alt="Hublot">
+                <img src="./public/sponsors/sponsors-pemex.png" alt="Pemex" class="grayscale hover:grayscale-0">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer"
+             class="hidden md:bg-white md:flex justify-center items-center text-start m-auto gap-4 text-mainprogram">
+        <figure>
+            <img src="./public/logo.png" alt="Logo" class="p-8">
+        </figure>
+        <div id="footer-info" class="flex flex-col gap-4 w-[80%] p-8">
+            <h2>2015 World Boxing Conference. All Rights Reserved.</h2>
+            <p>Thank you for joining us at the 2015 World Boxing Conference. We hope that you enjoyed the event and found it informative and engaging. </p>
+        </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

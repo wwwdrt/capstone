@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About</title>
-    <link rel="stylesheet" href="../capstone/styles/output.css">
+    <link rel="stylesheet" href="../styles/output.css">
 </head>
 <body>
 <!-- MENU -->
@@ -40,22 +40,22 @@
         </li>
     </ul>
     <nav id="desktop-menu"
-         class="hidden md:flex items-center justify-center p-4 shadow-md fixed w-full top-0 left-0 bg-white mt-[2.2rem] z-[99]">
-        <a href="../capstone/pages/index.html">
-            <img src="../capstone/public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8 cursor-pointer">
+         class="hidden md:flex items-center justify-evenly p-4 shadow-md fixed w-full top-0 left-0 bg-white mt-[2.2rem] z-[99]">
+        <a href="../index.html">
+            <img src="../public/logo.png" alt="Logo" class="h-[53px] w-[81px] mr-8 cursor-pointer">
         </a>
         <ul class="flex gap-12 text-navfont drop-shadow-sm font-medium">
             <li>
-                <a href="../capstone/pages/index.html">Home</a>
+                <a href="../index.html">Home</a>
             </li>
             <li>
-                <a href="#">Program</a>
+                <a href="../index.html#main-program">Program</a>
             </li>
             <li>
-                <a href="#">Join</a>
+                <a href="../index.html#speakers">Join</a>
             </li>
             <li>
-                <a href="#">Sponsor</a>
+                <a href="../index.html#sponsors">Sponsor</a>
             </li>
             <li>
                 <a href="#">News</a>
@@ -67,31 +67,31 @@
     </nav>
 
     <!--  MOBILE MENU -->
-    <div id="mobile-menu" class="menu md:hidden z-[100]" data-menu>
+    <div id="mobile-menu" class="menu md:hidden fixed" data-menu>
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
     </div>
 
-    <div id="menu-overlay" class="hidden md:hidden menu-overlay z-[100]" data-overlay>
-        <ul id="overlay" class="flex flex-col gap-2 pl-3 pt-3 text-red-600 text-3xl">
+    <div id="menu-overlay" class="hidden md:hidden menu-overlay fixed" data-overlay>
+        <ul id="overlay" class="flex flex-col gap-[3.5rem] pl-3 pt-3 text-corange text-5xl m-auto drop-shadow-2xl text-center">
             <li>
-                <a href="/pages/about.html" class="menu-link">About</a>
+                <a href="../index.html" class="menu-link hover:btnEff-1">Home</a>
             </li>
             <li>
-                <a href="" class="menu-link">Program</a>
+                <a href="../index.html#main-program" class="menu-link hover:btnEff-1">Program</a>
             </li>
             <li>
-                <a href="" class="menu-link">Join</a>
+                <a href="../index.html#speakers" class="menu-link hover:btnEff-1">Join</a>
             </li>
         </ul>
     </div>
 </header>
 
 <!-- ABOUT -->
-<section id="about" class="bg-[url('/public/bg-hero.png')] pt-[2.5rem]">
-    <a href="../capstone/pages/index.html" class="cursor-pointer">
-        <img src="../capstone/public/logo.png" alt="Logo" class="h-[104px] w-[193px] m-auto md:hidden">
+<section id="about" class="bg-[url('../public/bg-hero.png')] pt-[2.5rem]">
+    <a href="../index.html" class="cursor-pointer">
+        <img src="../public/logo.png" alt="Logo" class="h-[104px] w-[193px] m-auto md:hidden">
     </a>
     <div id="about-container" class="md:mt-[22%]">
         <div id="about-info" class="flex flex-col w-[80%] items-center m-auto text-center">
@@ -100,7 +100,7 @@
             <div class="bg-herobox border-[6px] border-white p-[1rem] mt-[1.5rem] mb-[1.5rem]">
                 <p>Our conference brings together the most influential figures in the boxing industry, from world-renowned athletes to top-notch coaches, trainers, and experts. Discover the latest trends and innovations in the sport, learn winning strategies and mental toughness from champions, and be part of shaping the future of boxing.</p>
             </div>
-            <img src="../capstone/public/mike-training.gif" alt="Mike Tyson Training"
+            <img src="../public/mike-training.gif" alt="Mike Tyson Training"
                  class="hidden md:flex m-auto md:mb-[5%]">
             <h3 class="text-date">Please contact us per Email for any further
                 questions about WBC 2023</h3>
@@ -120,8 +120,8 @@
             to 7.
             July</p>
         <div id="history-ad"
-             class="border-2 border-navfont bg-white w-[90%] m-auto flex justify-center p-4 cursor-pointer">
-            <img src="../capstone/public/logo.png" alt="Logo" class="h-[104px] w-[193px] m-auto">
+             class="border-2 border-navfont bg-white w-[72%] md:w-[45%] lg:w-[35%] m-auto flex justify-center p-[4rem] cursor-pointer">
+            <img src="../public/logo.png" alt="Logo" class="h-[104px] w-[193px] m-auto">
         </div>
     </div>
     <hr class="mt-[4rem] h-[1.5px] w-full bg-navfont mt-[1.5rem] mb-[2rem] rounded lg:w-[3%] border-none">
@@ -138,7 +138,7 @@
     <div id="history-memories"
          class="flex flex-col gap-8 md:flex-row items-center justify-center m-auto w-[90%]">
         <div id="first-memory" class="relative text-center w-[85%] m-auto cursor-pointer">
-            <img src="../capstone/public/history/memory-2022.jpg" alt="First memory 2022">
+            <img src="../public/history/memory-2022.jpg" alt="First memory 2022">
             <span class="absolute bg-corange w-full h-full top-0 left-0 opacity-40 hover:opacity-0"></span>
             <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white">
                 <h2 class="text-5xl font-medium">2022</h2>
@@ -146,7 +146,7 @@
             </div>
         </div>
         <div id="second-memory" class="relative text-center w-[85%] m-auto cursor-pointer">
-            <img src="../capstone/public/history/memory-2018.jpg" alt="First memory 2018">
+            <img src="../public/history/memory-2018.jpg" alt="First memory 2018">
             <span class="absolute bg-corange w-full h-full top-0 left-0 opacity-40 hover:opacity-0"></span>
             <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white">
                 <h2 class="text-5xl font-medium">2018</h2>
@@ -162,12 +162,13 @@
          class="flex flex-col justify-center items-center text-center bg-sponsors">
         <h2 class="pt-[3rem] text-2xl font-medium text-sponsors-font">Sponsors</h2>
         <hr class="hr">
-        <div id="sponsors-list" class="flex flex-wrap m-auto w-[90%] gap-4">
-            <img src="../capstone/public/sponsors/sponsors-jose.png" alt="Jose Sulaiman Foundation" class="grayscale hover:grayscale-0">
-            <img src="../capstone/public/sponsors/sponsors-everlast.png" alt="Everlast">
-            <img src="../capstone/public/sponsors/sponsors-tecate.png" alt="Tecate" class="grayscale hover:grayscale-0">
-            <img src="../capstone/public/sponsors/sponsors-hublot.png" alt="Hublot">
-            <img src="../capstone/public/sponsors/sponsors-pemex.png" alt="Pemex" class="grayscale hover:grayscale-0">
+        <div id="sponsors-list" class="flex flex-wrap m-auto w-[50%] gap-4">
+            <img src="../public/sponsors/sponsors-jose.png" alt="Jose Sulaiman Foundation" class="grayscale hover:grayscale-0">
+            <img src="../public/sponsors/sponsors-everlast.png" alt="Everlast">
+            <img src="../public/sponsors/sponsors-tecate.png" alt="Tecate" class="grayscale hover:grayscale-0">
+            <img src="../public/sponsors/sponsors-hublot.png" alt="Hublot">
+            <img src="../public/sponsors/sponsors-pemex.png" alt="Pemex" class="grayscale hover:grayscale-0">
+
         </div>
     </div>
 </section>
@@ -175,17 +176,17 @@
 <!-- FOOTER -->
 <section id="footer"
          class="md:bg-footer flex justify-center items-center text-start m-auto gap-4 md:text-white text-mainprogram">
-    <figure>
-        <img src="../capstone/public/logo.png" alt="Logo" class="p-8">
+    <figure class="flex justify-center pt-[1rem]">
+        <img src="../public/logo.png" alt="Logo" class="w-[50%]">
     </figure>
-    <div id="footer-info" class="flex flex-col gap-4 w-[80%] p-8">
+    <div id="footer-info" class="flex flex-col gap-4 w-[50%] p-8">
         <h2>2015 World Boxing Conference. All Rights Reserved.</h2>
         <p>Thank you for joining us at the 2015 World Boxing Conference. We hope that you enjoyed the event and found it informative and engaging. </p>
     </div>
 </section>
 
 <!-- SCRIPTS -->
-<script type="module" src="../capstone/script.js"></script>
+<script type="module" src="../script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

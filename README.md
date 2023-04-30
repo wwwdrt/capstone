@@ -1,36 +1,10 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="/public/drtcode.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>WBC</b></h3>
 
 </div>
 
@@ -60,17 +34,19 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 World Boxing Conference <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> First capstone project at Microverse 👇
 
-**[your_project__name]** is a...
+The World Boxing Conference is the premier event for boxing enthusiasts and industry professionals from around the world. This annual conference brings together the brightest minds in the sport of boxing to share knowledge, exchange ideas, and inspire the next generation of fighters. From championship boxers to top trainers, managers, and promoters, the WBC provides a unique opportunity to connect with the best in the business.
+
+At the World Boxing Conference, attendees can participate in a wide range of activities, including lectures, exhibitions, workshops, and ignite sessions. With access to cutting-edge technology and equipment, revolutionary training techniques, and the latest trends and innovations in the world of boxing, the WBC is the ultimate destination for anyone who is passionate about this incredible sport. Whether you are a seasoned pro or just starting out, the World Boxing Conference is the place to be to unleash your full potential and take your skills to the next level.  
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> For this project, I utilized HTML, CSS, and JavaScript. I had the option to use a CSS framework, and I chose Tailwind due to its flexibility and full customizability. In contrast to other frameworks like Bootstrap, I found that Tailwind offers more creative freedom. One great aspect of Tailwind is that you can use it in conjunction with other frameworks, such as by creating a layout component and overriding the existing Bootstrap component styles with Tailwind's apply directive and classes.
 
 <details>
   <summary>Client</summary>
@@ -97,11 +73,13 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Here are three features currently available in my app 👇
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **The mobile version of the home page includes a JavaScript-powered "More" button that displays additional speaker 
+information upon clicking, and toggles the button text between "More" and "Less" as appropriate.**
+- **The desktop version includes an infinite video overlay and background music that plays once.**
+- **The navigation bar is fixed to remain at the top of the screen when scrolling, ensuring easy access to all site 
+  sections.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,9 +87,11 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> You can explore a live demonstration of my project and watch a video walkthrough that covers each section of it 👇
 
-- [Live Demo Link](https://google.com)
+Video 👉 https://www.loom.com/share/7ce595b2e9a54a6f83ae296993d83aa3
+
+- [Live Demo Link](https://wwwdrt.github.io/capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,7 +99,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> To utilize my project, you can start by cloning the repository and installing the necessary development dependencies.
 
 To get a local copy up and running, follow these steps.
 
@@ -127,75 +107,40 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- [NPM](https://www.npmjs.com/)
+  - To use the project, you have two options. First, you can download the executable from the official website and install npm. Second, you can use a package manager and install it from the command line. For Windows, you can use Chocolatey, for Mac, you can use Homebrew, and for Linux, you can use a package manager depending on your distribution. For example, in Debian, you can use apt, and in Arch, you can use Pacman.
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+- First clone the repository, then a simple npm install will install all dependencies, for example:
+  - `cd projects && git clone https://somerepo.com`
+  - `npm install`
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+- You don't need a command, open the project in your code editor, then open the index.html file in the pages directory, 
+  and use [live-server](https://www.npmjs.com/package/live-server) to run the project.
 
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+- `npm run build:css`
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- [Live-server](https://www.npmjs.com/package/live-server)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,19 +148,16 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+> These are all the authors involved in this project.
 
-👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **DRT**
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@wwwdrt](https://github.com/wwwdrt)
+- Twitter: [@drtcode](https://twitter.com/drtcode)
+- Substack: [@drtcode](https://drtcode.substack.com)
+- Dev.to: [@drtcode](https://dev.to/drtcode)
+- ProductHunt: [@drtcode](https://www.producthunt.com/@drtcode)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,11 +165,14 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> Future updates for this project will include.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- **Adding support for xs screens.**
+- **Implementing animations, such as scroll effects and new states.**
+- **Introducing a news page that fetches data from an API.**
+- **Refactoring the conference website with modern technologies, such as Next.js.**
+- **Restructuring the website to create a high-ticket sales funnel that can be reused for various sports events and courses.**
+- **Enabling support for cryptocurrency payments using the Coinbase API.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -245,9 +190,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+> If you find this project useful or interesting, please consider showing your support! Even a small gesture like leaving a star ⭐️ on the repository or sharing it with others can make a big difference and help this project reach a wider audience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,15 +198,15 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+> I would like to express my sincere gratitude to Microverse for their unwavering support and guidance throughout my journey. A special thanks to Nikolas Klener, Ariel Camus, Andrea Funda, Bee Quesada, Luis Valades, Javier Vargas, Juan Zorrilla, Mahdi Aghaali, Sandro Hernandez, Temitope Ogunleye, and Amare Kassa, who have been instrumental in my growth as a programmer. Your insightful feedback and encouragement have been invaluable to me. I am also grateful to all the amazing code reviewers I have had the privilege to interact with, and I look forward to continuing these enriching connections. Once again, thank you for everything you've done and continue to do.
 
-I would like to thank...
+> Design by Cindy Shin, GUI & Graphic Designer, https://www.behance.net/adagio07, thanks for sharing the layout idea and design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
@@ -282,7 +225,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
